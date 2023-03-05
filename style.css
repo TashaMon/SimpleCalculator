@@ -54,12 +54,12 @@ button {
     border: 1px solid #000;
 }
 
-.btn-yellow{
-    background:rgb(245,146,62);
+.btn-blue{
+    background: #6495ED;
     color:white;
 }
 
-.btn-grey{
+.btn-gray{
     background:rgb(224,224,224);
 }
 
