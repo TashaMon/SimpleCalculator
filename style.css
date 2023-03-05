@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*tells the browser to account for any border and padding in the values you specify for an element's width and height. */
+}
+
+body{
+    min-height: 100vh; /*  10%  of viewport height */
+    background: #efeff2;
+    display: flex; /*Center the calculator*/
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width:  300px;
+    height: 500px;
+    box-shadow: 4px 4px  30px  rgba(0, 0, 0, 0.3); /*x y radius color*/
+    border-radius: 12px;
+    background: #22252D;
+    overflow: hidden;
+}
+
+form input {
+    width: 100%;
+    display: block;
+    height: 150px;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem; /*1rem =  16px which is standard for browsers*/
+    padding: 1rem;
+    color: #fff;
+    background: #000;
+    text-align: right;
+    pointer-events: none; /*So user cannot type input*/
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+button {
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid #000;
+}
+
+.btn-yellow{
+    background:rgb(245,146,62);
+    color:white;
+}
+
+.btn-grey{
+    background:rgb(224,224,224);
+}
+
+.btn-equal {
+    background: green;
+}
+
+.btn-clear  {
+    background: red;
+}
